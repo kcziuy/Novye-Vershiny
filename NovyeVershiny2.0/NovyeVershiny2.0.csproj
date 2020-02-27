@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{904E6EBB-1F31-4F12-AA24-F13720738C1C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NovyeVershiny2._0</RootNamespace>
+    <AssemblyName>NovyeVershiny2.0</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>lib\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllBaseView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllBaseView.Designer.cs">
+      <DependentUpon>AllBaseView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElliminationMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElliminationMode.Designer.cs">
+      <DependentUpon>ElliminationMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ELSlalom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ELSlalom.Designer.cs">
+      <DependentUpon>ELSlalom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutResults.Designer.cs">
+      <DependentUpon>OutResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultCord1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultCord1.Designer.cs">
+      <DependentUpon>ResultCord1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultCord2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultCord2.Designer.cs">
+      <DependentUpon>ResultCord2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultDrone1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultDrone1.Designer.cs">
+      <DependentUpon>ResultDrone1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultEASY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultEASY.Designer.cs">
+      <DependentUpon>ResultEASY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultDrone2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultDrone2.Designer.cs">
+      <DependentUpon>ResultDrone2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultRadio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultRadio.Designer.cs">
+      <DependentUpon>ResultRadio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsefulThings.cs" />
+    <Compile Include="Result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result.Designer.cs">
+      <DependentUpon>Result.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdd.Designer.cs">
+      <DependentUpon>FormAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEdit.Designer.cs">
+      <DependentUpon>FormEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLook.Designer.cs">
+      <DependentUpon>FormLook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInit.Designer.cs">
+      <DependentUpon>FormInit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResultF1NE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultF1NE.Designer.cs">
+      <DependentUpon>ResultF1NE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultHLG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultHLG.Designer.cs">
+      <DependentUpon>ResultHLG.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AllBaseView.resx">
+      <DependentUpon>AllBaseView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElliminationMode.resx">
+      <DependentUpon>ElliminationMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ELSlalom.resx">
+      <DependentUpon>ELSlalom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdd.resx">
+      <DependentUpon>FormAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInit.resx">
+      <DependentUpon>FormInit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEdit.resx">
+      <DependentUpon>FormEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLook.resx">
+      <DependentUpon>FormLook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutResults.resx">
+      <DependentUpon>OutResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Result.resx">
+      <DependentUpon>Result.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultCord1.resx">
+      <DependentUpon>ResultCord1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultCord2.resx">
+      <DependentUpon>ResultCord2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultDrone1.resx">
+      <DependentUpon>ResultDrone1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultEASY.resx">
+      <DependentUpon>ResultEASY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultF1NE.resx">
+      <DependentUpon>ResultF1NE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultDrone2.resx">
+      <DependentUpon>ResultDrone2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultHLG.resx">
+      <DependentUpon>ResultHLG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultRadio.resx">
+      <DependentUpon>ResultRadio.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\Novye.FormAdd.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\refresh.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

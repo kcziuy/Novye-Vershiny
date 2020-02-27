@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NovyeVershiny2.0", "NovyeVershiny2.0\NovyeVershiny2.0.csproj", "{904E6EBB-1F31-4F12-AA24-F13720738C1C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{05D375E3-AEB9-47F8-A789-4889029D1C4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{904E6EBB-1F31-4F12-AA24-F13720738C1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{904E6EBB-1F31-4F12-AA24-F13720738C1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{904E6EBB-1F31-4F12-AA24-F13720738C1C}.Debug|x86.ActiveCfg = Debug|x86
+		{904E6EBB-1F31-4F12-AA24-F13720738C1C}.Debug|x86.Build.0 = Debug|x86
+		{904E6EBB-1F31-4F12-AA24-F13720738C1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{904E6EBB-1F31-4F12-AA24-F13720738C1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{904E6EBB-1F31-4F12-AA24-F13720738C1C}.Release|x86.ActiveCfg = Release|x86
+		{904E6EBB-1F31-4F12-AA24-F13720738C1C}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D89D02FC-F7F9-4B76-B7F4-C10A3671A47B}
+	EndGlobalSection
+EndGlobal
